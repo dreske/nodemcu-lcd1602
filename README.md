@@ -11,8 +11,8 @@
 local lcd = require("lcd1602")
 
 -- may be different
-scl = 1
-sda = 2
+local scl = 1
+local sda = 2
 
 i2c.setup(0, sda, scl, i2c.SLOW)
 lcd.init(0x3F) -- may be different
