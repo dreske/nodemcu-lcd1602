@@ -4,3 +4,4 @@
 # Required firmware modules
 - bit
 - i2c
+- tmr
