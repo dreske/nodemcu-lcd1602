@@ -1,5 +1,5 @@
 # nodemcu-lcd1602
-1602 LCD I2C Lua Module for NodeMCU
+16x2 LCD I2C Lua Module for NodeMCU
 
 ## Required firmware modules
 - bit
