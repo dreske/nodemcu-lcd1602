@@ -189,11 +189,20 @@ end
 -- @param row the row
 -- @param value the text to print
 --
-function lcd.print(col, row, value)
-    lcd.cursorPosition(col, row)
+function lcd.print(value)
     for i = 1, #value do
         write(value:byte(i))
     end
+end
+
+--- Prints the given text to the specified cursor position
+-- @param col the column
+-- @param row the row
+-- @param value the text to print
+--
+function lcd.printAt(col, row, value)
+    lcd.cursorPosition(col, row)
+    lcd.print(value)
 end
 
 
